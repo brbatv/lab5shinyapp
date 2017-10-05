@@ -12,23 +12,10 @@ shinyUI(pageWithSidebar(
   
   mainPanel(
     tableOutput("data_table"),
-    tableOutput("coordinates"),
+    textOutput("sentence"),
+    textOutput("coordinates"),
+    textOutput("sentence2"),
     textOutput("formatted")
   
   )
 ))
-# # Define UI for miles per gallon application
-# #shinyUI(pageWithSidebar(
-#   
-#   # Application title
-# #  headerPanel("Google Geocode"),
-#   
-# #  sidebarPanel(
-#     textInput("address", "Address", value = "", width = NULL, placeholder = NULL)
-# #  ),
-#   
-# #  mainPanel(
-#     textOutput("table")
-#     
-#   )
-# ))
